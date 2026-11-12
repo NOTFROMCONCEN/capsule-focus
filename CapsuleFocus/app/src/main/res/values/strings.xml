@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="short_pomodoro">开始专注</string>
+    <string name="short_breathing">呼吸训练</string>
+</resources>

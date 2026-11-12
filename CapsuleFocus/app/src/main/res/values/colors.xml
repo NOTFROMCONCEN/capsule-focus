@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 构成主义品牌色（浅色） -->
+    <color name="primary">#E63328</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="bg">#EFE9DF</color>
+    <color name="surface">#F7F3EB</color>
+    <color name="surface_container">#E7DFD2</color>
+    <color name="on_surface">#17130E</color>
+    <color name="outline">#857B6E</color>
+    <color name="dim">#5F584E</color>
+
+    <color name="secondary_container">#F3D9D5</color>
+    <color name="on_secondary_container">#7A140C</color>
+
+    <color name="banner_bg">#F6DCD8</color>
+    <color name="banner_text">#7A140C</color>
+    <color name="ok_green">#2E7D32</color>
+
+    <!-- logo 米白底（取自 GPT 生成图的背景色） -->
+    <color name="ic_launcher_background">#F2EDE4</color>
+</resources>

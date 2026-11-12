@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Caption">
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textColor">@color/dim</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

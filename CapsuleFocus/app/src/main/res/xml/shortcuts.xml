@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="start_pomodoro"
+        android:enabled="true"
+        android:icon="@drawable/ic_short_tomato"
+        android:shortcutShortLabel="@string/short_pomodoro"
+        android:shortcutLongLabel="@string/short_pomodoro">
+        <intent
+            android:action="app.capsulefocus.action.START_POMODORO"
+            android:targetPackage="app.capsulefocus"
+            android:targetClass="app.capsulefocus.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="start_breathing"
+        android:enabled="true"
+        android:icon="@drawable/ic_short_breath"
+        android:shortcutShortLabel="@string/short_breathing"
+        android:shortcutLongLabel="@string/short_breathing">
+        <intent
+            android:action="app.capsulefocus.action.START_BREATHING"
+            android:targetPackage="app.capsulefocus"
+            android:targetClass="app.capsulefocus.MainActivity" />
+    </shortcut>
+</shortcuts>

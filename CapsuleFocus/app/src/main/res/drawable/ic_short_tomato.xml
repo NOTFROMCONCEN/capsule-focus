@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- shortcuts 图标：番茄（红果+绿叶） -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#E63328"
+        android:pathData="M4,14.5 a8,8 0 1 0 16,0 a8,8 0 1 0 -16,0 Z" />
+
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M12,6.5 c1.6,-2.6 4.6,-3.2 6.2,-2.7 c-0.5,2.1 -3.1,3.7 -6.2,2.7 Z" />
+</vector>

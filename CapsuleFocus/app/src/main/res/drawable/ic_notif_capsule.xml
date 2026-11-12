@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通知小图标：必须是纯白(alpha)剪影。斜切药胶囊——上下两节留缝，
+     24dp 状态栏尺寸下依然轮廓清晰 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <group
+        android:rotation="45"
+        android:pivotX="12"
+        android:pivotY="12">
+
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M7.5,11 L7.5,7.5 A4.5,4.5 0 0 1 16.5,7.5 L16.5,11 Z" />
+
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M16.5,13 L16.5,16.5 A4.5,4.5 0 0 1 7.5,16.5 L7.5,13 Z" />
+    </group>
+</vector>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Android 16 (API 36)：实时通知 / 灵动胶囊 -->
+    <uses-permission android:name="android.permission.POST_PROMOTED_NOTIFICATIONS" />
+    <!-- 会话期间保活：前台服务 + CPU 唤醒锁 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 呼吸引导振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 摸鱼检测：使用情况访问（特殊权限，需用户在系统设置授予） -->
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:label="胶囊专注"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.CapsuleFocus">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- 长按图标 shortcuts：开始专注 / 呼吸训练 -->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!-- 下拉快捷设置磁贴：一键开始番茄钟 -->
+        <service
+            android:name=".FocusTileService"
+            android:exported="true"
+            android:icon="@drawable/ic_notif_capsule"
+            android:label="开始专注"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- 会话期间的前台服务；dataSync 类型与 Kelivo 一致 -->
+        <service
+            android:name=".FocusService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- 通知上的 暂停/跳过/结束 按钮 -->
+        <receiver android:name=".SessionReceiver" android:exported="false" />
+    </application>
+</manifest>

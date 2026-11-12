@@ -1,0 +1,10 @@
+# Gradle wrapper 脚本必须保持 LF：Windows 上 core.autocrlf=true 会把它转成 CRLF，
+# 导致 ./gradlew 出现 "\r: command not found"
+gradlew text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# 二进制文件不做换行转换
+*.jar binary
+*.png binary
+*.apk binary

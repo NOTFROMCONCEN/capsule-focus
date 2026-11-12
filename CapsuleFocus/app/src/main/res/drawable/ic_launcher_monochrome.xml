@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 13+ 主题图标用：同构图的纯色剪影，启动器自行着色 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <group
+        android:scaleX="0.62"
+        android:scaleY="0.62"
+        android:pivotX="54"
+        android:pivotY="54">
+
+        <path
+            android:pathData="M24,54 a30,30 0 1,0 60,0 a30,30 0 1,0 -60,0 Z"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="3.5" />
+
+        <path
+            android:pathData="M0,62 L44,68 L0,96 Z"
+            android:fillColor="#FFFFFF" />
+
+        <group
+            android:rotation="15"
+            android:pivotX="56"
+            android:pivotY="50">
+            <path
+                android:pathData="M56,21 A13,13 0 0 0 43,34 L43,66 A13,13 0 0 0 56,79 A13,13 0 0 0 69,66 L69,34 A13,13 0 0 0 56,21 Z"
+                android:fillColor="#FFFFFF" />
+        </group>
+    </group>
+</vector>
